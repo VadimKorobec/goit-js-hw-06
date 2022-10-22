@@ -15,10 +15,14 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
-const newListEl = document.createElement('li');
-newListEl.classList('js-list');
-console.log(newListEl);
+const elements = images.map(option => {
+  const newItemEl = document.createElement('li');
+  newItemEl.classList.add('js-list');
+  const newImgEl = document.createElement('img');
+  newImgEl.classList.add('js-list__img');
 
-const newImgEl = document.createElement('img');
-newImgEl.classList('js-list__img');
-console.log(newImgEl);
+  newItemEl.append(newImgEl);
+  console.log(newItemEl);
+
+  return newImgEl;
+});
