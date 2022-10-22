@@ -15,20 +15,10 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
-const markup = images.map(({ url, alt }) => '<li><img src = `${url}` alt = `${alt}`></li>');
+const markup = images
+  .map(({ url, alt }) => `<li><img src = ${url} alt = ${alt} width = 200 height = 150></li>`)
+  .join('');
 console.log(markup);
 
 list.insertAdjacentHTML('beforeend', markup);
-
-// const elements = images.map(option => {
-//   const newItemEl = document.createElement('li');
-//   newItemEl.classList.add('js-list');
-//   const newImgEl = document.createElement('img');
-//   newImgEl.classList.add('js-list__img');
-//   newImgEl.src;
-
-//   newItemEl.append(newImgEl);
-//   console.log(newItemEl);
-
-//   return newImgEl;
-// });
+list.setAttribute('style', 'list-style-type:none; display :flex: justify-content:space-between;');
