@@ -5,11 +5,11 @@ const list = document.querySelector('#ingredients');
 const elements = [];
 
 for (let i = 0; i < ingredients.length; i += 1) {
-  const navItemEl = document.createElement('li');
-  navItemEl.classList.add('item');
-  navItemEl.textContent = ingredients[i];
-  console.log(navItemEl);
-  elements.push(navItemEl);
+  const newItemEl = document.createElement('li');
+  newItemEl.classList.add('item');
+  newItemEl.textContent = ingredients[i];
+  console.log(newItemEl);
+  elements.push(newavItemEl);
 }
 
 list.append(...elements);
