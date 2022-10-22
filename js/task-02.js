@@ -9,7 +9,7 @@ for (let i = 0; i < ingredients.length; i += 1) {
   newItemEl.classList.add('item');
   newItemEl.textContent = ingredients[i];
   console.log(newItemEl);
-  elements.push(newavItemEl);
+  elements.push(newItemEl);
 }
 
 list.append(...elements);
