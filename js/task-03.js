@@ -14,3 +14,11 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
+
+const newListEl = document.createElement('li');
+newListEl.classList('js-list');
+console.log(newListEl);
+
+const newImgEl = document.createElement('img');
+newImgEl.classList('js-list__img');
+console.log(newImgEl);
