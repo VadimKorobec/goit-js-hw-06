@@ -10,3 +10,4 @@ for (let i = 0; i < ingredients.length; i += 1) {
   navItemEl.textContent = ingredients[i];
   elements.push(listEl);
 }
+listEl.append(...elements);
