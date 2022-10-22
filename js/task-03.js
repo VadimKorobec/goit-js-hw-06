@@ -20,8 +20,7 @@ const elements = images.map(option => {
   newItemEl.classList.add('js-list');
   const newImgEl = document.createElement('img');
   newImgEl.classList.add('js-list__img');
-
-  newItemEl.append(newImgEl);
+  newImgEl.src = newItemEl.append(newImgEl);
   console.log(newItemEl);
 
   return newImgEl;
