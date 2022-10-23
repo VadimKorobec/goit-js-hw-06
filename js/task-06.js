@@ -1,17 +1,3 @@
-// const input = document.querySelector('#validation-input');
-
-// input.addEventListener('blur', onChangeFocus);
-
-// function onChangeFocus(event) {
-//   console.log(event);
-//   if (input.value.length === Number(input.dataset.length)) {
-//     input.classList.add('valid');
-//   } else {
-//     input.classList.remove('valid');
-//     input.classList.add('invalid');
-//   }
-// }
-
 const inputVal = document.getElementById('validation-input');
 const totalLenght = inputVal.getAttribute('data-length');
 const intTotallenght = parseInt(totalLenght, 10);
