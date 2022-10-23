@@ -4,12 +4,16 @@ input.addEventListener('blur', onChangeFocus);
 
 function onChangeFocus(event) {
   console.log(event);
-  if (event.currentTarget.value.length === Number(input.dataset.length)) {
+  if (input.value.length === Number(input.dataset.length)) {
     input.classList.add('valid');
-  } else {
-    input.classList.remove('valid');
-    input.classList.add('invalid');
-  }
+    } else(input.value.length === Number(input.dataset.length)) {
+input.classList.add('invalid')
+    };
+        
+   
+    // input.classList.remove('valid');
+    // input.classList.add('invalid');
+  
 }
 
 // const inputVal = document.getElementById('validation-input');
