@@ -3,4 +3,8 @@ const refs = {
   span: document.querySelectorAll('#name-output'),
 };
 
-refs.input.addEventListener('input');
+refs.input.addEventListener('input', onInputChange);
+
+function onInputChange(event) {
+  console.log(event.currentTarget.value);
+}
