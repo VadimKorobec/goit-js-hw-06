@@ -20,5 +20,5 @@ const markup = images
   .join('');
 console.log(markup);
 
-list.insertAdjacentHTML('beforeend', markup);
+list.insertAdjacentHTML('afterbegin', markup);
 list.setAttribute('style', 'list-style-type:none; display :flex; justify-content:space-between;');
