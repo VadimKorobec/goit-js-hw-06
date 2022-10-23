@@ -15,9 +15,11 @@ const valueEl = document.querySelector('#value');
 decrementBtn.addEventListener('click', function () {
   counterValue.decrement();
   valueEl.textContent = counterValue.value;
+  console.log(counterValue);
 });
 
 incrementBtn.addEventListener('click', function () {
   counterValue.increment();
   valueEl.textContent = counterValue.value;
+  console.log(counterValue);
 });
