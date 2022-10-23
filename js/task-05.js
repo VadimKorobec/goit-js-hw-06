@@ -1,10 +1,11 @@
-const input = document.getElementById(`name-input`);
-const nameOutput = document.getElementById(`name-output`);
+const input = document.querySelector('#name-input');
+const span = document.querySelector('#name-output');
 
-input.oninput = function () {
+input.addEventListener('input', onInputChange);
+
+function onInputChange(event) {
+  span.textContent = event.currentTarget.value;
   if (input.value === '') {
-    nameOutput.innerHTML = 'Anonymous';
-  } else {
-    nameOutput.innerHTML = input.value;
+    span.textContent = 'Anonymous';
   }
-};
+}
