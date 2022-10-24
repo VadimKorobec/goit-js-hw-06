@@ -1,8 +1,9 @@
-const fontEl = document.getElementById(`text`);
+const spanEl = document.querySelector('#text');
+const inputEl = document.querySelector('#font-size-control');
 
-const inputEl = document.getElementById(`font-size-control`);
+inputEl.addEventListener('input', onSearch);
 
-inputEl.addEventListener(`input`, e => {
+function onSearch(evt) {
   const size = inputEl.value;
-  fontEl.style.fontSize = size + 'px';
-});
+  spanEl.style.fontSize = size + 'px';
+}
